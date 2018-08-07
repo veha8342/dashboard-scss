@@ -1,0 +1,68 @@
+/*RESET START*/
+*{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  color: $black;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  font-weight: $fontLight;
+}
+/*General reset*/
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+}
+img{
+  max-width: 100%;
+}
+a{
+  color: #000;
+}
+
+a{
+  cursor: pointer;
+}
+
+
+a{
+  color: $blue;
+  text-decoration: none;
+
+  &:hover{
+  color: $linkHoverColor;
+}
+}
+
+ul{
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+li{
+  list-style-type: none;
+}
+input, select, textarea{
+  outline:none;
+  border:none;
+}
+textarea{
+  resize:vertical
+}
+button{
+  cursor:pointer;
+}
+label{
+  margin-bottom: 0;
+}
+
+.btn{
+  outline: none;
+}
+
+:focus{
+  outline: none;
+}
+/*RESET END*/
