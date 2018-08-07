@@ -1,0 +1,10 @@
+// Guide style
+
+.gide-wrap{
+  padding: 20px;
+
+  & > *{
+    margin-bottom: 15px;
+  }
+}
+

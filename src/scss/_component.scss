@@ -1,7 +1,37 @@
-.page-title{
-  font-size: 14px;
+//COMPONENT
+
+//.page-title{
+//  font-size: $titleFontSize;
+//  color: $titleColor;
+//  text-transform: uppercase;
+//}
+//
+//.section-title{
+//  @extend .page-title;
+//  text-transform: none;
+//}
+
+
+
+%title{
+  color: $titleColor;
+  font-size: $titleFontSize;
 }
 
 .section-title{
-  font-size: 20px;
+  @extend %title;
+}
+
+.page-title{
+  @extend %title;
+  text-transform: uppercase;
+}
+
+.link{
+  font-size: $linkFontSizeDef;
+  color: $linkColor;
+
+  &.large-link{
+    font-size: $linkLargeFont;
+  }
 }

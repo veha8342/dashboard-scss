@@ -58,8 +58,20 @@ label {
   outline: none; }
 
 /*RESET END*/
-.page-title {
-  font-size: 14px; }
+.section-title, .page-title {
+  color: #a6a6a6;
+  font-size: 16px; }
 
-.section-title {
-  font-size: 20px; }
+.page-title {
+  text-transform: uppercase; }
+
+.link {
+  font-size: 13px;
+  color: #56819f; }
+  .link.large-link {
+    font-size: 16px; }
+
+.gide-wrap {
+  padding: 20px; }
+  .gide-wrap > * {
+    margin-bottom: 15px; }
