@@ -1,0 +1,10 @@
+.text-bold{
+  font-weight: $fontBold;
+}
+
+.fixed-to-top{
+  position: fixed;
+  z-index: 99;
+  top: 0;
+}
+

@@ -12,10 +12,12 @@
 //}
 
 
+// TITLE
 
 %title{
   color: $titleColor;
   font-size: $titleFontSize;
+  font-weight: $fontBold;
 }
 
 .section-title{
@@ -27,6 +29,10 @@
   text-transform: uppercase;
 }
 
+
+// LINKS
+
+
 .link{
   font-size: $linkFontSizeDef;
   color: $linkColor;
@@ -34,4 +40,131 @@
   &.large-link{
     font-size: $linkLargeFont;
   }
+  
+  &:hover{
+    color: $linkHoverColor;
+  }
 }
+
+//Button
+
+
+.btn{
+  padding: 12px 22px;
+  font-size: $btnFontSize;
+  border-radius: 2px;
+  display: inline-block;
+  color: $btnDefaultColor;
+
+  &.btn-default{
+    background-color: $btnDefaultBg;
+
+    &:hover{
+      background-color: $btnDefaultBgHover;
+    }
+  }
+
+  &.btn-action{
+
+    background-color: $btnActionBg;
+
+    &:hover{
+      background-color: $btnActionBgHover;
+    }
+  }
+
+  &.btn-disabled{
+
+    background-color: $btnDisablesBg;
+    cursor: not-allowed;
+
+    &:hover{
+      background-color: $btnDisablesBgHover;
+    }
+
+  }
+}
+
+//Table
+
+.table{
+  border-collapse: collapse;
+  font-size: $tableFontSize;
+
+  tbody {
+
+    tr{
+      &:hover {
+        background-color: $tableTrHover;
+      }
+    }
+
+  }
+
+  tr{
+
+    th{
+      padding: 33px 18px;
+      color: $grey;
+    }
+
+    td{
+      padding: 20px 18px;
+      border-top: 1px solid $lightGrey;
+
+      &.td-title{
+        font-size: 16px;
+        color: $grey;
+      }
+
+    }
+
+    .table-sort{
+      color: $grey;
+      padding: 8px 10px;
+      margin: 8px -10px;
+      border-radius: 2px;
+
+      &:hover{
+        color: $black;
+        background-color: $xsLightGrey;
+      }
+
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

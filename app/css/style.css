@@ -19,16 +19,9 @@ img {
   max-width: 100%; }
 
 a {
-  color: #000; }
-
-a {
-  cursor: pointer; }
-
-a {
-  color: #56819f;
+  color: inherit;
+  cursor: pointer;
   text-decoration: none; }
-  a:hover {
-    color: #ffa200; }
 
 ul {
   margin: 0;
@@ -58,9 +51,18 @@ label {
   outline: none; }
 
 /*RESET END*/
+.text-bold {
+  font-weight: 700; }
+
+.fixed-to-top {
+  position: fixed;
+  z-index: 99;
+  top: 0; }
+
 .section-title, .page-title {
   color: #a6a6a6;
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: 700; }
 
 .page-title {
   text-transform: uppercase; }
@@ -70,6 +72,53 @@ label {
   color: #56819f; }
   .link.large-link {
     font-size: 16px; }
+  .link:hover {
+    color: #ffa200; }
+
+.btn {
+  padding: 12px 22px;
+  font-size: 18px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  display: inline-block;
+  color: #fff; }
+  .btn.btn-default {
+    background-color: #979797; }
+    .btn.btn-default:hover {
+      background-color: #bababa; }
+  .btn.btn-action {
+    background-color: #f58220; }
+    .btn.btn-action:hover {
+      background-color: #ffa200; }
+  .btn.btn-disabled {
+    background-color: #e3e3e3;
+    cursor: not-allowed; }
+    .btn.btn-disabled:hover {
+      background-color: #e3e3e3; }
+
+.table {
+  border-collapse: collapse;
+  font-size: 13px; }
+  .table tbody tr:hover {
+    background-color: #f1f3f3; }
+  .table tr th {
+    padding: 33px 18px;
+    color: #bababa; }
+  .table tr td {
+    padding: 20px 18px;
+    border-top: 1px solid #e3e3e3; }
+    .table tr td.td-title {
+      font-size: 16px;
+      color: #bababa; }
+  .table tr .table-sort {
+    color: #bababa;
+    padding: 8px 10px;
+    margin: 8px -10px;
+    -webkit-border-radius: 2px;
+            border-radius: 2px; }
+    .table tr .table-sort:hover {
+      color: #333;
+      background-color: #f5f5f2; }
 
 .gide-wrap {
   padding: 20px; }
